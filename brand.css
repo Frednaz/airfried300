@@ -473,6 +473,256 @@ html, body {
 .arrow::after { content: " →"; }
 
 /* ─────────────────────────────────────────────────────────────
+   Recipe detail page (/recipes/<slug>/)
+   ───────────────────────────────────────────────────────────── */
+
+.recipe {
+  padding: 36px 56px 80px;
+}
+
+.recipe-hero { margin-bottom: 32px; }
+.recipe-hero .h-folio { margin-bottom: 24px; }
+.recipe-hero-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 56px;
+  align-items: start;
+}
+.recipe-hero-text { display: flex; flex-direction: column; }
+.recipe-title {
+  font-family: var(--serif-display);
+  font-size: clamp(40px, 6vw, 76px);
+  line-height: 0.98;
+  letter-spacing: -0.01em;
+  margin: 18px 0 0;
+  color: var(--ink);
+}
+.recipe-title em {
+  font-style: italic;
+  color: var(--rust);
+}
+.recipe-lede {
+  font-family: var(--serif-text);
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--ink-2);
+  margin: 24px 0 0;
+  max-width: 540px;
+}
+.metric-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  margin-top: 28px;
+}
+.metric {
+  padding: 14px 0;
+  border-right: 1px solid var(--rule);
+}
+.metric:last-child { border-right: none; }
+.metric-val {
+  font-family: var(--serif-display);
+  font-size: 22px;
+  margin-top: 4px;
+  color: var(--ink);
+}
+.recipe-hero-photo {
+  min-height: 560px;
+  border: 1px solid var(--rule);
+}
+
+/* Intro paragraphs (full-width, constrained) */
+.recipe-intro {
+  max-width: 720px;
+  margin: 32px auto 56px;
+  font-family: var(--serif-text);
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--ink);
+}
+.recipe-intro p { margin: 0 0 18px; }
+.recipe-intro p:last-child { margin-bottom: 0; }
+
+/* Body — ingredients sidebar + method */
+.recipe-body {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.recipe-ingredients {
+  position: sticky;
+  top: 24px;
+}
+.recipe-section-title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.recipe-section-title h2 {
+  font-family: var(--serif-display);
+  font-size: 34px;
+  margin: 0;
+  color: var(--ink);
+}
+
+/* Servings control */
+.servings-control {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--ink);
+  margin-bottom: 22px;
+}
+.servings-btn {
+  background: transparent;
+  border: 0;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-family: var(--mono);
+  font-size: 14px;
+  color: var(--ink);
+}
+.servings-btn:hover { background: var(--ink); color: var(--paper); }
+.servings-val {
+  font-family: var(--mono);
+  font-size: 12px;
+  min-width: 72px;
+  text-align: center;
+  padding: 6px 8px;
+}
+
+/* Ingredients list */
+.ingredients-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.ingredients-list li.ingredient {
+  font-family: var(--serif-text);
+  font-size: 15px;
+  line-height: 1.4;
+  padding: 9px 0;
+  border-bottom: 1px dotted var(--rule);
+  cursor: pointer;
+  transition: opacity 120ms;
+}
+.ingredients-list li.ingredient:hover { color: var(--rust); }
+.ingredients-list li.ingredient.checked {
+  opacity: 0.4;
+  text-decoration: line-through;
+}
+
+/* Method — numbered steps */
+.method-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.method-step {
+  display: grid;
+  grid-template-columns: 88px 1fr;
+  gap: 28px;
+  padding: 24px 0;
+  border-top: 1px solid var(--rule);
+}
+.method-step:first-child { border-top: 1px solid var(--ink); }
+.method-num {
+  font-family: var(--serif-display);
+  font-size: 56px;
+  line-height: 1;
+  color: var(--rust);
+}
+.method-title {
+  font-family: var(--serif-display);
+  font-size: 24px;
+  margin: 4px 0 10px;
+  line-height: 1.1;
+  color: var(--ink);
+}
+.method-text {
+  font-family: var(--serif-text);
+  font-size: 16px;
+  line-height: 1.62;
+  color: var(--ink);
+  max-width: 620px;
+}
+.method-text p { margin: 0 0 12px; }
+.method-text p:last-child { margin-bottom: 0; }
+
+/* Notes aside */
+.recipe-note {
+  margin-top: 40px;
+  padding: 22px 26px;
+  background: var(--paper-2);
+  border-left: 3px solid var(--rust);
+  font-family: var(--serif-text);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--ink-2);
+}
+.recipe-note .h-section-label { margin-bottom: 8px; }
+.recipe-note p { margin: 0 0 12px; font-style: italic; }
+.recipe-note p:last-child { margin-bottom: 0; }
+
+/* Footer */
+.recipe-footer {
+  margin-top: 64px;
+  padding-top: 32px;
+  border-top: 1px solid var(--rule);
+  text-align: center;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   Recipes index page (/recipes/)
+   ───────────────────────────────────────────────────────────── */
+
+.recipes-masthead {
+  padding: 40px 56px 36px;
+  border-bottom: 1px solid var(--ink);
+}
+.recipes-title {
+  font-family: var(--serif-display);
+  font-size: clamp(56px, 9vw, 110px);
+  line-height: 0.92;
+  margin: 0;
+  color: var(--ink);
+}
+.recipes-title em { font-style: italic; color: var(--rust); }
+.recipes-lede {
+  font-family: var(--serif-text);
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--ink-2);
+  max-width: 580px;
+  margin: 22px 0 0;
+}
+
+/* Recipe grid: reuse .bands wrapper for layout, but with hover */
+.recipes-grid .band { cursor: pointer; transition: background 140ms; }
+.recipes-grid .band:hover { background: var(--paper-2); }
+.recipes-grid .band:hover h3 { color: var(--rust); }
+
+/* Responsive overrides for recipe pages */
+@media (max-width: 960px) {
+  .recipe { padding: 24px 24px 60px; }
+  .recipe-hero-grid { grid-template-columns: 1fr; gap: 24px; }
+  .recipe-hero-photo { min-height: 360px; order: -1; }
+  .recipe-body { grid-template-columns: 1fr; gap: 40px; }
+  .recipe-ingredients { position: static; }
+  .method-step { grid-template-columns: 64px 1fr; gap: 18px; }
+  .method-num { font-size: 44px; }
+  .recipes-masthead { padding: 28px 24px; }
+}
+@media (max-width: 540px) {
+  .recipe-title { font-size: 40px; }
+  .metric-strip { grid-template-columns: repeat(2, 1fr); }
+  .metric:nth-child(2) { border-right: none; }
+}
+
+/* ─────────────────────────────────────────────────────────────
    Responsive — narrow viewports
    ───────────────────────────────────────────────────────────── */
 
