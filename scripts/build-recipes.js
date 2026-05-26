@@ -95,6 +95,15 @@ const FONTS_LINK = `<link href="https://fonts.googleapis.com/css2?family=DM+Seri
 const PRECONNECT = `<link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />`;
 
+const GA_TAG = `<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2PPHGWESW3"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-2PPHGWESW3');
+</script>`;
+
 function topNav(activeRecipes = false) {
   return `<header class="topnav">
   <div class="topnav-left">
@@ -150,6 +159,7 @@ function recipeDetailHtml(data, sections) {
 ${PRECONNECT}
 ${FONTS_LINK}
 <link rel="stylesheet" href="/brand.css" />
+${GA_TAG}
 </head>
 <body class="h-paper">
 <div class="page">
@@ -242,6 +252,7 @@ function indexPageHtml(recipes) {
 ${PRECONNECT}
 ${FONTS_LINK}
 <link rel="stylesheet" href="/brand.css" />
+${GA_TAG}
 </head>
 <body class="h-paper">
 <div class="page">
