@@ -348,6 +348,53 @@ ${urls.map(u => `  <url>
   fs.writeFileSync(path.join(__dirname, '..', 'sitemap.xml'), sitemap);
   console.log(`  ✓ /sitemap.xml (${urls.length} URLs)`);
 
+  // llms.txt — index for AI assistants (ChatGPT, Claude, Perplexity, Gemini)
+  // Spec: https://llmstxt.org
+  // Group recipes by method so the AI can navigate by cooking technique
+  const byMethod = {};
+  recipes.forEach(r => {
+    const m = r.method || 'other';
+    (byMethod[m] = byMethod[m] || []).push(r);
+  });
+  const methodOrder = ['air-fryer', 'no-cook', 'no-bake', 'stovetop', 'skillet', 'blender', 'other'];
+  const methodLabel = {
+    'air-fryer': 'Air-fryer recipes',
+    'no-cook': 'No-cook recipes',
+    'no-bake': 'No-bake recipes',
+    'stovetop': 'Stovetop recipes',
+    'skillet': 'Skillet & one-pan recipes',
+    'blender': 'Blender drinks',
+    'other': 'Other recipes',
+  };
+  const sortedMethods = methodOrder.filter(m => byMethod[m]);
+
+  const llms = `# Airfried 300
+
+> Three hundred air-fryer recipes (currently ${recipes.length}). Editorial-cookbook site for home cooks: each recipe tested in a basket, written from a real food photograph, with ingredients, numbered method steps, and notes on substitutions and make-ahead.
+
+Airfried is a static recipe site at airfried300.com. Every recipe is image-anchored — the photograph determines the ingredients and the dish. Methods skew air-fryer-heavy but the site also covers stovetop, no-cook, no-bake, skillet, and blender recipes for weekday cooking. Recipes are written in a warm, slightly conversational editorial voice; each includes active time, total time, yield, difficulty, and category metadata in YAML frontmatter (source MDX, rendered to static HTML).
+
+## Site structure
+- [Home](${SITE}/): Featured recipes and editorial bands.
+- [All recipes](${SITE}/recipes): Browseable index of all ${recipes.length} recipes.
+- [Sitemap](${SITE}/sitemap.xml): Machine-readable list of all URLs.
+
+${sortedMethods.map(m => `## ${methodLabel[m]}
+${byMethod[m].sort((a,b)=>a.title.localeCompare(b.title)).map(r =>
+  `- [${r.title}](${SITE}/recipes/${r.slug}): ${(r.description || '').replace(/\s+/g, ' ').trim()}`
+).join('\n')}`).join('\n\n')}
+
+## Metadata conventions
+- \`category\`: Mains, Sides, Breakfast, Snacks, Dessert, Sandwich, Pantry, Meal Prep
+- \`method\`: air-fryer | no-cook | no-bake | stovetop | skillet | blender
+- \`active_minutes\` / \`total_minutes\`: realistic timings, tested
+- \`servings\`: number of portions at the stated quantities
+- \`difficulty\`: Easy | Medium | Hard
+- \`tags\`: free-form list (e.g. weeknight, kids, gluten-free, freezer-friendly)
+`;
+  fs.writeFileSync(path.join(__dirname, '..', 'llms.txt'), llms);
+  console.log(`  ✓ /llms.txt (${recipes.length} recipes across ${sortedMethods.length} method groups)`);
+
   console.log(`\nDone. Built ${recipes.length} recipes.`);
 }
 
