@@ -104,6 +104,8 @@ gtag('js', new Date());
 gtag('config', 'G-2PPHGWESW3');
 </script>`;
 
+const ADSENSE_META = `<meta name="google-adsense-account" content="ca-pub-5467670776557078">`;
+
 function topNav(activeRecipes = false) {
   return `<header class="topnav">
   <div class="topnav-left">
@@ -155,6 +157,7 @@ function recipeDetailHtml(data, sections) {
 <meta charset="utf-8" />
 <title>${escapeHtml(data.title)} — Airfried</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+${ADSENSE_META}
 <meta name="description" content="${escapeHtml(data.description || data.title)}" />
 ${PRECONNECT}
 ${FONTS_LINK}
@@ -248,6 +251,7 @@ function indexPageHtml(recipes) {
 <meta charset="utf-8" />
 <title>All recipes — Airfried</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+${ADSENSE_META}
 <meta name="description" content="All Airfried recipes — every one tested in a basket." />
 ${PRECONNECT}
 ${FONTS_LINK}
