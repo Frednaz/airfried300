@@ -469,6 +469,27 @@ html, body {
 /* Default section spacing */
 .section-pad { padding: 70px 56px 0; }
 
+/* Ad placement slot — reserves space so the layout doesn't jump when the ad loads */
+.ad-slot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 280px;
+  margin: 56px 56px 0;
+  padding: 16px;
+  border: 1px solid var(--rule);
+  background: var(--paper-2);
+  overflow: hidden;
+}
+.ad-slot rrh-tag {
+  display: block;
+  width: 100%;
+  min-height: 250px;
+}
+@media (max-width: 880px) {
+  .ad-slot { margin: 32px 20px 0; min-height: 250px; }
+}
+
 /* Spacing for arrow glyphs after button text */
 .arrow::after { content: " →"; }
 

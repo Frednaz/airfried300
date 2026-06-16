@@ -106,6 +106,13 @@ gtag('config', 'G-2PPHGWESW3');
 
 const ADSENSE_META = `<meta name="google-adsense-account" content="ca-pub-5467670776557078">`;
 
+const RTB_SCRIPT = `<!-- RTB System -->
+<script async src="https://rtbsystem.ru/scripts/rrh/mbundle.js"></script>`;
+
+const RTB_TAG = `<section class="ad-slot" aria-label="Advertisement">
+<rrh-tag key="oon1ahC4bo#ailohr0ahDoo" width="100%" height="100%"></rrh-tag>
+</section>`;
+
 function topNav(activeRecipes = false) {
   return `<header class="topnav">
   <div class="topnav-left">
@@ -163,6 +170,7 @@ ${PRECONNECT}
 ${FONTS_LINK}
 <link rel="stylesheet" href="/brand.css" />
 ${GA_TAG}
+${RTB_SCRIPT}
 </head>
 <body class="h-paper">
 <div class="page">
@@ -188,6 +196,8 @@ ${topNav(true)}
   </section>
 
   ${introHtml ? `<section class="recipe-intro">${introHtml}</section>` : ''}
+
+  ${RTB_TAG}
 
   <section class="recipe-body">
     <aside class="recipe-ingredients">
@@ -257,6 +267,7 @@ ${PRECONNECT}
 ${FONTS_LINK}
 <link rel="stylesheet" href="/brand.css" />
 ${GA_TAG}
+${RTB_SCRIPT}
 </head>
 <body class="h-paper">
 <div class="page">
@@ -267,6 +278,8 @@ ${topNav(true)}
   <h1 class="recipes-title">All <em>recipes</em>.</h1>
   <p class="recipes-lede">Every one tested in a basket, none needing more than a tablespoon of oil. We're starting with ${recipes.length} — three hundred soon.</p>
 </section>
+
+${RTB_TAG}
 
 <section class="recipes-grid section-pad">
   <div class="bands" style="grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);">
