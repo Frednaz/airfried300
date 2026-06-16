@@ -106,6 +106,10 @@ gtag('config', 'G-2PPHGWESW3');
 
 const ADSENSE_META = `<meta name="google-adsense-account" content="ca-pub-5467670776557078">`;
 
+const ADSENSE_SCRIPT = `<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5467670776557078"
+        crossorigin="anonymous"></script>`;
+
 const RTB_SCRIPT = `<!-- RTB System -->
 <script async src="https://rtbsystem.ru/scripts/rrh/mbundle.js"></script>`;
 
@@ -170,6 +174,7 @@ ${PRECONNECT}
 ${FONTS_LINK}
 <link rel="stylesheet" href="/brand.css" />
 ${GA_TAG}
+${ADSENSE_SCRIPT}
 ${RTB_SCRIPT}
 </head>
 <body class="h-paper">
@@ -267,6 +272,7 @@ ${PRECONNECT}
 ${FONTS_LINK}
 <link rel="stylesheet" href="/brand.css" />
 ${GA_TAG}
+${ADSENSE_SCRIPT}
 ${RTB_SCRIPT}
 </head>
 <body class="h-paper">
