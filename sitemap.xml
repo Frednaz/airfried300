@@ -36,6 +36,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://airfried300.com/recipes/air-fryer-asparagus</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://airfried300.com/recipes/air-fryer-bacon-wrapped-asparagus</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -86,6 +91,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://airfried300.com/recipes/air-fryer-beef-bean-taquitos</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://airfried300.com/recipes/air-fryer-beef-broccoli-noodles</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -97,6 +107,11 @@
   </url>
   <url>
     <loc>https://airfried300.com/recipes/air-fryer-blackberry-apple-crumble</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://airfried300.com/recipes/air-fryer-bratwurst-vegetables</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -117,6 +132,16 @@
   </url>
   <url>
     <loc>https://airfried300.com/recipes/air-fryer-brussels-sprouts</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://airfried300.com/recipes/air-fryer-buffalo-cauliflower-bites</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://airfried300.com/recipes/air-fryer-cajun-seafood-boil</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -156,6 +181,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://airfried300.com/recipes/air-fryer-chicken-fajitas</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://airfried300.com/recipes/air-fryer-chicken-nuggets</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -186,6 +216,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://airfried300.com/recipes/air-fryer-cinnamon-rolls</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://airfried300.com/recipes/air-fryer-cinnamon-sugar-donuts</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -207,6 +242,21 @@
   </url>
   <url>
     <loc>https://airfried300.com/recipes/air-fryer-cookie-pie</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://airfried300.com/recipes/air-fryer-corn-dogs</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://airfried300.com/recipes/air-fryer-corn-on-the-cob</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://airfried300.com/recipes/air-fryer-cornish-hen</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -246,6 +296,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://airfried300.com/recipes/air-fryer-crunchwrap</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://airfried300.com/recipes/air-fryer-crunchy-nut-french-toast</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -256,12 +311,27 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://airfried300.com/recipes/air-fryer-eggs-in-a-basket</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://airfried300.com/recipes/air-fryer-filipino-lumpia</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://airfried300.com/recipes/air-fryer-fish-and-fries</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://airfried300.com/recipes/air-fryer-fish-fillets</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://airfried300.com/recipes/air-fryer-fish-tacos</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -316,7 +386,17 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://airfried300.com/recipes/air-fryer-gluten-free-onion-rings</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://airfried300.com/recipes/air-fryer-goose-fat-roasties</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://airfried300.com/recipes/air-fryer-green-tomatoes</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -331,6 +411,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://airfried300.com/recipes/air-fryer-hamburgers</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://airfried300.com/recipes/air-fryer-hard-boiled-eggs</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -341,12 +426,27 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://airfried300.com/recipes/air-fryer-hawaiian-chicken</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://airfried300.com/recipes/air-fryer-herb-lemon-cauliflower</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://airfried300.com/recipes/air-fryer-hobo-packets</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://airfried300.com/recipes/air-fryer-hotdogs</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://airfried300.com/recipes/air-fryer-hush-puppies</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -396,12 +496,27 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://airfried300.com/recipes/air-fryer-loaded-mini-pizza-bagels</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://airfried300.com/recipes/air-fryer-loaded-potato-chips</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://airfried300.com/recipes/air-fryer-meatballs</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://airfried300.com/recipes/air-fryer-meatloaf</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://airfried300.com/recipes/air-fryer-mexican-street-corn</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -426,6 +541,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://airfried300.com/recipes/air-fryer-okra</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://airfried300.com/recipes/air-fryer-old-bay-kale-chips</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -446,6 +566,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://airfried300.com/recipes/air-fryer-pesto-chicken</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://airfried300.com/recipes/air-fryer-pickles</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -456,12 +581,22 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://airfried300.com/recipes/air-fryer-pizza-dippers</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://airfried300.com/recipes/air-fryer-plantains</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://airfried300.com/recipes/air-fryer-poached-egg</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://airfried300.com/recipes/air-fryer-popcorn-chicken</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -486,12 +621,22 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://airfried300.com/recipes/air-fryer-potato-skins</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://airfried300.com/recipes/air-fryer-potato-wedges</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://airfried300.com/recipes/air-fryer-prawn-tacos</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://airfried300.com/recipes/air-fryer-quesadilla</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -586,12 +731,27 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://airfried300.com/recipes/air-fryer-seasoned-pretzels</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://airfried300.com/recipes/air-fryer-shrimp-fajitas</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://airfried300.com/recipes/air-fryer-shrimp-po-boys</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://airfried300.com/recipes/air-fryer-smores</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://airfried300.com/recipes/air-fryer-spicy-sweet-potato-fries</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -641,12 +801,22 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://airfried300.com/recipes/air-fryer-tortilla-chips</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://airfried300.com/recipes/air-fryer-tuna-melt</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://airfried300.com/recipes/air-fryer-tuna-sweetcorn-nuggets</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://airfried300.com/recipes/air-fryer-turkey-burgers</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -672,6 +842,16 @@
   </url>
   <url>
     <loc>https://airfried300.com/recipes/air-fryer-zucchini-fries</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://airfried300.com/recipes/air-fryer-zucchini-pizza-boats</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://airfried300.com/recipes/air-fryer-zucchini-squash</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -722,6 +902,11 @@
   </url>
   <url>
     <loc>https://airfried300.com/recipes/giant-air-fryer-potato-rosti</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://airfried300.com/recipes/gluten-free-air-fryer-zucchini-fries</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
