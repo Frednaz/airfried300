@@ -282,7 +282,6 @@ ${topNav(true)}
 <section class="recipes-masthead">
   <div class="h-folio" style="margin-bottom:14px;">Recipes</div>
   <h1 class="recipes-title">All <em>recipes</em>.</h1>
-  <p class="recipes-lede">Every one tested in a basket, none needing more than a tablespoon of oil. We're starting with ${recipes.length} — three hundred soon.</p>
 </section>
 
 ${RTB_TAG}
